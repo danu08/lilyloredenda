@@ -1,0 +1,80 @@
+/* Estilos generales de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f4;
+    color: #2f3e46;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Menú superior */
+header {
+    background-color: #354f52;
+    padding: 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #84a98c;
+}
+
+/* Títulos y textos */
+h1 {
+    color: #2f3e46;
+    margin-top: 40px;
+    font-size: 28px;
+}
+
+p {
+    color: #52796f;
+    font-size: 16px;
+}
+
+/* Tarjeta contenedora de la muestra */
+.katalogo-txartela {
+    background-color: #ffffff;
+    border: 1px solid #d8e2dc;
+    width: 320px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.katalogo-txartela img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Botón simple */
+.botoia {
+    display: inline-block;
+    background-color: #52796f;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.botoia:hover {
+    background-color: #354f52;
+}
+
+/* Pie de página */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #dad7cd;
+    color: #354f52;
+    font-size: 13px;
+}
