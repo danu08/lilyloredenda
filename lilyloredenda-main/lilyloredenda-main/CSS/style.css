@@ -217,3 +217,11 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+
+/* Mantener el menú visible en la parte superior */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
