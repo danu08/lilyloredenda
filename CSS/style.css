@@ -1,333 +1,115 @@
-/* ========================================
-   LILY LOREDENDA - STYLE CSS
-   ======================================== */
-
+/* Lily Loredenda - CSS sencillo */
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
     background-color: #f5f7f5;
     color: #344f52;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
 }
-
-header {
-    width: 100%;
-    background-color: #344f52;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 15px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #c5e5cf;
-    text-decoration: underline;
-}
-
-nav a.lang-btn {
-    background-color: #49765f;
-    color: white;
-    padding: 6px 12px;
-    border-radius: 4px;
-    font-weight: bold;
-    border: 1px solid #c5e5cf;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-nav a.lang-btn:hover {
-    background-color: #c5e5cf;
-    color: #344f52;
-    text-decoration: none;
-}
-
-main {
-    width: 90%;
-    max-width: 1100px;
-    margin: 30px auto;
-}
-
 h1 {
     color: #344f52;
     text-align: center;
-    font-size: 28px;
-    margin: 20px 0 10px;
 }
-
 h2 {
     color: #49765f;
-    font-size: 20px;
-    margin: 20px 0 10px;
 }
-
 p {
     font-size: 15px;
 }
-
-.azalpena {
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 12px;
+    background-color: #344f52;
     text-align: center;
-    max-width: 700px;
-    margin: 10px auto 25px;
-    color: #586b61;
 }
-
-hr {
-    border: 0;
-    height: 2px;
-    background-color: #b7cfc0;
-    margin: 25px auto;
+li {
+    display: inline;
+    margin: 0 12px;
 }
-
-/* Catalog cards */
-.katalogo-sarea {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 22px;
-    align-items: stretch;
-    margin: 25px 0;
+a {
+    color: #49765f;
 }
-
-.katalogo-txartela {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: white;
-    border: 1px solid #dce7df;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    box-sizing: border-box;
-}
-
-.katalogo-sarea .katalogo-txartela {
-    max-width: none;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-img {
-    display: block;
-    max-width: 150px;
-    width: 100%;
-    height: auto;
-    margin: 15px auto;
-    border-radius: 6px;
-}
-
-.katalogo-sarea img {
-    max-width: 100%;
-    width: 100%;
-    height: 190px;
-    object-fit: cover;
-}
-
-.katalogo-sarea .botoia {
-    margin-top: auto;
-}
-
-.botoia {
-    display: inline-block;
-    background-color: #49765f;
+ul a {
     color: white;
-    padding: 10px 20px;
-    margin-top: 10px;
-    border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    transition: background-color 0.3s;
 }
-
-.botoia:hover {
-    background-color: #344f52;
+ul a:hover {
+    color: #c5e5cf;
+    text-decoration: underline;
 }
-
-table {
+body > h1, body > h2, body > p, body > hr, body > table, body > form, body > ol, body > dl {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.azalpena {
+    text-align: center;
+}
+img {
+    display: block;
     width: 100%;
+    max-width: 420px;
+    height: auto;
+    margin: 15px auto;
+    border-radius: 8px;
+}
+table {
+    width: 90%;
     margin: 20px auto;
     border-collapse: collapse;
     background-color: white;
 }
-
 caption {
-    font-size: 18px;
+    padding: 8px;
     font-weight: bold;
-    padding: 10px;
-    color: #344f52;
 }
-
 td {
-    border: 1px solid #d2dfd6;
-    padding: 12px;
-    text-align: left;
+    border: 1px solid #b7cfc0;
+    padding: 10px;
 }
-
 tr:first-child {
     background-color: #344f52;
     color: white;
 }
-
-tr:hover {
-    background-color: #edf5ef;
-}
-
 form {
     max-width: 450px;
     margin: 20px auto;
     padding: 20px;
     background-color: white;
     border: 1px solid #dce7df;
-    border-radius: 8px;
 }
-
-input[type="text"],
-input[type="password"] {
+input[type="text"], input[type="password"], textarea, select {
     width: 100%;
-    padding: 10px;
     margin: 6px 0 15px;
+    padding: 9px;
     border: 1px solid #bdcec2;
-    border-radius: 4px;
     box-sizing: border-box;
 }
-
-input[type="submit"] {
+input[type="submit"], input[type="reset"] {
+    padding: 10px 18px;
+    border: 0;
     background-color: #49765f;
     color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
     cursor: pointer;
-    font-weight: bold;
-    width: 100%;
 }
-
-input[type="submit"]:hover {
-    background-color: #344f52;
+small {
+    color: #586b61;
 }
-
-footer {
-    margin-top: 40px;
-    padding: 15px;
-    background-color: #344f52;
-    color: white;
-    text-align: center;
-    font-size: 14px;
+hr {
+    border: 0;
+    height: 2px;
+    background-color: #b7cfc0;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
-
-footer a {
-    color: #c5e5cf;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-@media (max-width: 760px) {
-    .katalogo-sarea {
-        grid-template-columns: 1fr;
+@media (max-width: 600px) {
+    li {
+        display: block;
+        margin: 8px;
     }
-
-    nav {
-        gap: 15px;
+    table {
+        font-size: 13px;
     }
-}
-
-
-/* Product catalog: individual flowers and bouquets */
-.produktu-katalogoa {
-    max-width: 1200px;
-}
-.katalogo-izenburua {
-    margin: 34px 0 16px;
-    padding: 8px 0 8px 16px;
-    border-left: 4px solid #49765f;
-}
-.katalogo-izenburua h2 {
-    margin: 0 0 4px;
-    font-size: 25px;
-}
-.katalogo-izenburua p {
-    margin: 0;
-    color: #68786e;
-}
-.produktu-sarea {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 22px;
-    margin: 20px 0 42px;
-    align-items: stretch;
-}
-.produktu-txartela {
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    background: #fff;
-    border: 1px solid #dce7df;
-    border-radius: 14px;
-    box-shadow: 0 5px 18px rgba(30, 60, 45, 0.08);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.produktu-txartela:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 24px rgba(30, 60, 45, 0.14);
-}
-.produktu-txartela img {
-    width: 100%;
-    max-width: none;
-    height: 220px;
-    object-fit: cover;
-    margin: 0;
-    border-radius: 0;
-}
-.produktu-edukia {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    padding: 16px;
-}
-.produktu-edukia h3 {
-    margin: 0 0 8px;
-    color: #344f52;
-    font-size: 18px;
-}
-.produktu-edukia p {
-    margin: 0 0 12px;
-    color: #596b61;
-}
-.produktu-edukia .prezioa {
-    margin-top: auto;
-    padding-top: 10px;
-    color: #49765f;
-    font-size: 21px;
-    font-weight: 700;
-}
-.prezioa span {
-    color: #75847b;
-    font-size: 12px;
-    font-weight: 400;
-}
-@media (max-width: 1000px) {
-    .produktu-sarea { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
-@media (max-width: 560px) {
-    .produktu-sarea { grid-template-columns: 1fr; }
-    .produktu-txartela img { height: 250px; }
 }
