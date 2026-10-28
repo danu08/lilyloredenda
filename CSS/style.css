@@ -249,3 +249,85 @@ footer a:hover {
         gap: 15px;
     }
 }
+
+
+/* Product catalog: individual flowers and bouquets */
+.produktu-katalogoa {
+    max-width: 1200px;
+}
+.katalogo-izenburua {
+    margin: 34px 0 16px;
+    padding: 8px 0 8px 16px;
+    border-left: 4px solid #49765f;
+}
+.katalogo-izenburua h2 {
+    margin: 0 0 4px;
+    font-size: 25px;
+}
+.katalogo-izenburua p {
+    margin: 0;
+    color: #68786e;
+}
+.produktu-sarea {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+    margin: 20px 0 42px;
+    align-items: stretch;
+}
+.produktu-txartela {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid #dce7df;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(30, 60, 45, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.produktu-txartela:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(30, 60, 45, 0.14);
+}
+.produktu-txartela img {
+    width: 100%;
+    max-width: none;
+    height: 220px;
+    object-fit: cover;
+    margin: 0;
+    border-radius: 0;
+}
+.produktu-edukia {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 16px;
+}
+.produktu-edukia h3 {
+    margin: 0 0 8px;
+    color: #344f52;
+    font-size: 18px;
+}
+.produktu-edukia p {
+    margin: 0 0 12px;
+    color: #596b61;
+}
+.produktu-edukia .prezioa {
+    margin-top: auto;
+    padding-top: 10px;
+    color: #49765f;
+    font-size: 21px;
+    font-weight: 700;
+}
+.prezioa span {
+    color: #75847b;
+    font-size: 12px;
+    font-weight: 400;
+}
+@media (max-width: 1000px) {
+    .produktu-sarea { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+    .produktu-sarea { grid-template-columns: 1fr; }
+    .produktu-txartela img { height: 250px; }
+}
