@@ -1,293 +1,260 @@
-/* Lily Loredenda - diseinu argia, naturala eta erraza */
-* {
-    box-sizing: border-box;
-}
+/* CSS sencillo para Lily Loredenda */
+
+/* Estilo general de la pagina */
 body {
     margin: 0;
-    padding: 0 0 25px;
+    padding-bottom: 20px;
     background-color: #f8f6f0;
     color: #35483d;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.7;
+    font-family: Arial, sans-serif;
 }
+
+/* Menu de navegacion */
 ul {
-    list-style-type: none;
     margin: 0;
-    padding: 16px 10px;
+    padding: 15px;
     background-color: #294b3b;
     text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    border-bottom: 4px solid #d8a65d;
+    list-style-type: none;
 }
+
 li {
     display: inline;
-    margin: 0 10px;
+    margin: 10px;
 }
+
 ul a {
-    display: inline-block;
-    padding: 7px 10px;
-    color: #fffdf7;
+    color: white;
     text-decoration: none;
-    font-size: 13px;
     font-weight: bold;
-    letter-spacing: 1px;
-    border-radius: 5px;
 }
+
 ul a:hover {
-    background-color: #416b51;
-    color: #fff1cf;
+    color: #d8a65d;
 }
+
+/* Titulos y textos */
 h1 {
-    margin: 34px auto 12px;
-    padding: 0 20px;
     color: #294b3b;
     text-align: center;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 38px;
-    line-height: 1.2;
+    font-family: Georgia, serif;
+    margin: 30px 10px 15px;
 }
+
 h2 {
-    margin: 28px 5% 12px;
-    padding: 12px 16px;
+    margin: 25px 5% 10px;
+    padding: 10px;
     color: #315b43;
     background-color: #fffdf8;
     border-left: 5px solid #d8a65d;
-    border-radius: 0 8px 8px 0;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 24px;
 }
+
 p {
     margin: 12px 5%;
-    font-size: 16px;
+    line-height: 1.6;
 }
+
 .azalpena {
-    max-width: 760px;
-    margin: 0 auto 24px;
-    padding: 0 20px;
-    color: #687568;
+    max-width: 750px;
+    margin: 0 auto 20px;
+    padding: 0 15px;
     text-align: center;
-    font-size: 17px;
+    color: #687568;
 }
+
+/* Enlaces */
 a {
     color: #2f6847;
     font-weight: bold;
 }
+
 p a {
     display: inline-block;
-    padding: 9px 16px;
-    color: white;
+    padding: 10px 15px;
     background-color: #3d704d;
-    border-radius: 5px;
+    color: white;
     text-decoration: none;
 }
+
 p a:hover {
     background-color: #294b3b;
-    text-decoration: none;
 }
+
 body > p a {
-    margin-top: 4px;
+    margin-top: 5px;
 }
+
+/* Imagenes */
 img {
     display: block;
-    width: 100%;
+    width: 90%;
     max-width: 420px;
     height: auto;
-    margin: 18px auto;
-    border-radius: 12px;
-    box-shadow: 0 7px 20px #294b3b20;
+    margin: 20px auto;
 }
+
 img.portada {
     width: 100%;
     max-width: none;
-    height: 310px;
+    height: 300px;
     margin: 0;
-    border-radius: 0;
     object-fit: cover;
-    box-shadow: none;
     border-bottom: 5px solid #d8a65d;
 }
+
+/* Tablas */
 table {
     width: 90%;
-    margin: 24px auto;
-    border-collapse: separate;
-    border-spacing: 0;
-    overflow: hidden;
+    margin: 25px auto;
+    border-collapse: collapse;
     background-color: #fffdf8;
-    border: 1px solid #e5dfd1;
-    border-radius: 12px;
-    box-shadow: 0 8px 24px #294b3b12;
 }
+
 caption {
-    padding: 14px 10px;
+    padding: 10px;
     color: #294b3b;
-    font-family: Georgia, "Times New Roman", serif;
     font-size: 19px;
     font-weight: bold;
 }
+
 td {
-    padding: 14px;
-    border-bottom: 1px solid #e9e3d7;
-    vertical-align: middle;
+    padding: 12px;
+    border: 1px solid #e5dfd1;
+    text-align: center;
 }
+
 tr:first-child {
     background-color: #315b43;
     color: white;
 }
-tr:last-child td {
-    border-bottom: 0;
-}
+
 td img {
-    width: 100%;
     max-width: 150px;
-    margin: 12px auto 0;
-    border-radius: 8px;
-    box-shadow: none;
 }
+
+/* Tabla de productos destacados */
 table.destacados {
-    width: 92%;
-    border-spacing: 12px;
+    border-spacing: 10px;
     border: 0;
-    background: transparent;
-    box-shadow: none;
+    background-color: transparent;
 }
+
 table.destacados td {
-    width: 33.33%;
-    padding: 18px;
+    width: 33%;
+    padding: 15px;
     background-color: #fffdf8;
-    border: 1px solid #e8e1d4;
-    border-radius: 12px;
-    text-align: center;
     vertical-align: top;
 }
+
 table.destacados td h2 {
     margin: 10px 0;
     padding: 0;
-    background: transparent;
+    background-color: transparent;
     border: 0;
     font-size: 21px;
 }
+
 table.destacados td img {
     width: 100%;
     max-width: none;
-    height: 190px;
-    margin: 0 auto 12px;
+    height: 180px;
     object-fit: cover;
-    border-radius: 8px;
 }
+
 table.destacados td p {
     margin: 10px 0;
     font-size: 14px;
 }
+
 table.destacados td a {
     display: inline-block;
     margin-top: 8px;
-    padding: 9px 12px;
+    padding: 8px 12px;
     background-color: #3d704d;
     color: white;
-    border-radius: 5px;
     text-decoration: none;
-    font-size: 13px;
 }
+
+/* Formularios */
 form {
-    max-width: 460px;
+    max-width: 450px;
     margin: 25px auto;
-    padding: 28px;
+    padding: 20px;
     background-color: #fffdf8;
     border: 1px solid #e5dfd1;
-    border-top: 5px solid #d8a65d;
-    border-radius: 12px;
-    box-shadow: 0 8px 24px #294b3b12;
 }
+
 label {
     display: block;
     margin-top: 10px;
-    color: #315b43;
 }
-input[type="text"], input[type="password"], textarea, select {
-    width: 100%;
-    margin: 7px 0 16px;
-    padding: 12px;
-    border: 1px solid #c9d2c7;
-    border-radius: 5px;
-    background-color: #fff;
-    font-size: 15px;
+
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+    width: 95%;
+    margin: 7px 0 15px;
+    padding: 8px;
 }
-input[type="submit"], input[type="reset"] {
-    margin: 5px 5px 0 0;
-    padding: 11px 18px;
-    border: 0;
-    border-radius: 5px;
+
+input[type="submit"],
+input[type="reset"] {
+    margin: 5px;
+    padding: 10px 15px;
     background-color: #3d704d;
     color: white;
-    font-weight: bold;
-    cursor: pointer;
+    border: 0;
 }
+
 input[type="reset"] {
     background-color: #8a9387;
 }
+
 small {
     color: #687568;
 }
+
 hr {
     width: 90%;
-    height: 1px;
     margin: 30px auto;
     border: 0;
-    background-color: #ded8ca;
+    border-top: 1px solid #ded8ca;
 }
+
+/* Ajustes para pantallas pequeñas */
 @media (max-width: 700px) {
     li {
         display: inline-block;
-        margin: 3px;
+        margin: 5px;
     }
-    ul {
-        padding: 10px 4px;
-    }
-    ul a {
-        padding: 7px 6px;
-        font-size: 11px;
-        letter-spacing: 0;
-    }
+
     h1 {
-        font-size: 30px;
-        margin-top: 25px;
+        font-size: 28px;
     }
-    h2 {
-        font-size: 21px;
-        margin-left: 4%;
-        margin-right: 4%;
-    }
-    p {
-        margin-left: 4%;
-        margin-right: 4%;
-    }
+
     img.portada {
-        height: 210px;
+        height: 200px;
     }
+
     table {
-        width: 94%;
+        width: 95%;
         font-size: 13px;
     }
-    td {
-        padding: 8px;
-    }
-    td img {
-        max-width: 100px;
-    }
-    table.destacados, table.destacados tbody, table.destacados tr, table.destacados td {
-        display: block;
-        width: 92%;
-    }
+
+    table.destacados,
+    table.destacados tbody,
+    table.destacados tr,
     table.destacados td {
-        margin: 14px auto;
+        display: block;
+        width: 90%;
     }
-    table.destacados td img {
-        height: 210px;
+
+    table.destacados td {
+        margin: 15px auto;
     }
+
     form {
         width: 90%;
-        padding: 20px;
     }
 }
