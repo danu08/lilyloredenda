@@ -258,3 +258,82 @@ hr {
         width: 90%;
     }
 }
+
+/* Lore katalogoko produktuen txartelak */
+.catalogo {
+    width: 92%;
+    margin: 20px auto 35px;
+    text-align: center;
+}
+
+.producto {
+    display: inline-block;
+    width: 21%;
+    min-width: 190px;
+    margin: 1%;
+    padding: 12px;
+    box-sizing: border-box;
+    vertical-align: top;
+    background-color: #fffdf8;
+    border: 1px solid #e5dfd1;
+    text-align: left;
+}
+
+.producto img {
+    width: 100%;
+    max-width: none;
+    height: 190px;
+    margin: 0;
+    object-fit: cover;
+}
+
+.producto h3 {
+    margin: 14px 0 8px;
+    color: #294b3b;
+    font-family: Georgia, serif;
+    font-size: 19px;
+}
+
+.producto p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.producto .precio {
+    margin-top: 14px;
+    color: #315b43;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.itzuli {
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .catalogo {
+        width: 96%;
+    }
+
+    .producto {
+        width: 44%;
+        min-width: 0;
+        margin: 2%;
+    }
+
+    .producto img {
+        height: 150px;
+    }
+}
+
+@media (max-width: 420px) {
+    .producto {
+        display: block;
+        width: 90%;
+        margin: 15px auto;
+    }
+
+    .producto img {
+        height: 210px;
+    }
+}
