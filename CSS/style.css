@@ -11,10 +11,12 @@ body {
     line-height: 1.6;
 }
 
-/* goi burua */
 header {
     width: 100%;
     background-color: #344f52;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav {
@@ -39,7 +41,6 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Estilo para el botón de cambio de idioma en el menú */
 nav a.lang-btn {
     background-color: #49765f;
     color: white;
@@ -56,10 +57,9 @@ nav a.lang-btn:hover {
     text-decoration: none;
 }
 
-/* Letra */
 main {
     width: 90%;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 30px auto;
 }
 
@@ -94,19 +94,35 @@ hr {
     margin: 25px auto;
 }
 
-/* Tarjetak */
+/* Catalog cards */
+.katalogo-sarea {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    align-items: stretch;
+    margin: 25px 0;
+}
+
 .katalogo-txartela {
     max-width: 400px;
-    margin: 25px auto;
+    margin: 0 auto;
     padding: 20px;
     background-color: white;
     border: 1px solid #dce7df;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
 }
 
-/* Imágenes */
+.katalogo-sarea .katalogo-txartela {
+    max-width: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 img {
     display: block;
     max-width: 150px;
@@ -116,7 +132,17 @@ img {
     border-radius: 6px;
 }
 
-/* Botoiak */
+.katalogo-sarea img {
+    max-width: 100%;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.katalogo-sarea .botoia {
+    margin-top: auto;
+}
+
 .botoia {
     display: inline-block;
     background-color: #49765f;
@@ -133,7 +159,6 @@ img {
     background-color: #344f52;
 }
 
-/* Tablak */
 table {
     width: 100%;
     margin: 20px auto;
@@ -159,12 +184,10 @@ tr:first-child {
     color: white;
 }
 
-/* Efecto hover limpio para las filas de la tabla */
 tr:hover {
     background-color: #edf5ef;
 }
 
-/* Formularioak */
 form {
     max-width: 450px;
     margin: 20px auto;
@@ -199,7 +222,6 @@ input[type="submit"]:hover {
     background-color: #344f52;
 }
 
-/* paginaren beheko aldea */
 footer {
     margin-top: 40px;
     padding: 15px;
@@ -218,10 +240,12 @@ footer a:hover {
     text-decoration: underline;
 }
 
+@media (max-width: 760px) {
+    .katalogo-sarea {
+        grid-template-columns: 1fr;
+    }
 
-/* Mantener el menú visible en la parte superior */
-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    nav {
+        gap: 15px;
+    }
 }
