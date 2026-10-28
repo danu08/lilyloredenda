@@ -7,74 +7,36 @@
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index-ing.html">HOME</a>
-            <a href="shop-ing.html">CATALOG</a>
-            <a href="about_ing.html">ABOUT US</a>
-            <a href="login-ing.html">LOGIN</a>
-            <a href="../EUS/Katalogoa.html" class="lang-btn">EU</a>
-        </nav>
-    </header>
-
-    <main class="produktu-katalogoa">
-        <h1>Lily Loredenda Catalog</h1>
-        <p class="azalpena">Choose individual flowers or a beautiful bouquet. All prices are in euros.</p>
-
-        <section aria-labelledby="flowers">
-            <div class="katalogo-izenburua">
-                <h2 id="flowers">Individual Flowers</h2>
-                <p>Small details and simple gifts.</p>
-            </div>
-            <div class="produktu-sarea">
-                <article class="produktu-txartela">
-                    <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=800&q=85" alt="Fresh flowers in bright colors" loading="lazy">
-                    <div class="produktu-edukia"><h3>White Rose</h3><p>An elegant rose for special occasions.</p><p class="prezioa">€4.00 <span>/ each</span></p></div>
-                </article>
-                <article class="produktu-txartela">
-                    <img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=800&q=85" alt="Colorful tulips" loading="lazy">
-                    <div class="produktu-edukia"><h3>Tulip</h3><p>A fresh and colorful spring flower.</p><p class="prezioa">€3.50 <span>/ each</span></p></div>
-                </article>
-                <article class="produktu-txartela">
-                    <img src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?auto=format&fit=crop&w=800&q=85" alt="Elegant lily" loading="lazy">
-                    <div class="produktu-edukia"><h3>Lily</h3><p>An elegant flower with a pleasant fragrance.</p><p class="prezioa">€3.00 <span>/ each</span></p></div>
-                </article>
-                <article class="produktu-txartela">
-                    <img src="https://images.unsplash.com/photo-1494625927555-6ec4433b1571?auto=format&fit=crop&w=800&q=85" alt="Small natural wildflowers" loading="lazy">
-                    <div class="produktu-edukia"><h3>Wildflower</h3><p>A natural and cheerful touch for your day.</p><p class="prezioa">€2.50 <span>/ each</span></p></div>
-                </article>
-            </div>
-        </section>
-
-        <section aria-labelledby="bouquets">
-            <div class="katalogo-izenburua">
-                <h2 id="bouquets">Flower Bouquets</h2>
-                <p>Fresh arrangements, ready to give as a gift.</p>
-            </div>
-            <div class="produktu-sarea">
-                <article class="produktu-txartela">
-                    <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=800&q=85" alt="Colorful tulip bouquet" loading="lazy">
-                    <div class="produktu-edukia"><h3>Tulip Bouquet</h3><p>A colorful bouquet of fresh tulips.</p><p class="prezioa">€28.00</p></div>
-                </article>
-                <article class="produktu-txartela">
-                    <img src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?auto=format&fit=crop&w=800&q=85" alt="Red and pink rose bouquet" loading="lazy">
-                    <div class="produktu-edukia"><h3>Rose Bouquet</h3><p>A romantic arrangement of classic roses.</p><p class="prezioa">€35.00</p></div>
-                </article>
-                <article class="produktu-txartela">
-                    <img src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?auto=format&fit=crop&w=800&q=85" alt="Large elegant flower bouquet" loading="lazy">
-                    <div class="produktu-edukia"><h3>Mixed Flower Bouquet</h3><p>Fresh flowers in different colors and shapes.</p><p class="prezioa">€32.00</p></div>
-                </article>
-                <article class="produktu-txartela">
-                    <img src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?auto=format&fit=crop&w=800&q=85" alt="Elegant white flower bouquet" loading="lazy">
-                    <div class="produktu-edukia"><h3>White Bouquet</h3><p>A calm and elegant arrangement for celebrations.</p><p class="prezioa">€40.00</p></div>
-                </article>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p><a href="index-ing.html">Back to home</a></p>
-        <p>&copy; 2026 Lily Loredenda. All rights reserved.</p>
-    </footer>
+    <ul>
+        <li><a href="index-ing.html">HOME</a></li>
+        <li><a href="shop-ing.html">CATALOG</a></li>
+        <li><a href="about_ing.html">ABOUT US</a></li>
+        <li><a href="login-ing.html">LOGIN</a></li>
+        <li><a href="../EUS/Katalogoa.html">EU</a></li>
+    </ul>
+    <h1>Flower Catalog</h1>
+    <p class="azalpena">Choose individual flowers or a bouquet. All prices are in euros.</p>
+    <hr>
+    <h2 id="flowers">Individual Flowers</h2>
+    <table>
+        <caption>Individual flower prices</caption>
+        <tr><td><b>Name</b></td><td><b>Description</b></td><td><b>Price</b></td></tr>
+        <tr><td>White Rose</td><td>An elegant rose for special occasions.<img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=500&q=80" alt="White rose"></td><td>€4.00</td></tr>
+        <tr><td>Tulip</td><td>A colorful spring flower.<img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=500&q=80" alt="Tulips"></td><td>€3.50</td></tr>
+        <tr><td>Lily</td><td>An elegant flower with a pleasant fragrance.<img src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?auto=format&fit=crop&w=500&q=80" alt="Lily"></td><td>€3.00</td></tr>
+        <tr><td>Wildflower</td><td>A natural and cheerful touch.<img src="https://images.unsplash.com/photo-1494625927555-6ec4433b1571?auto=format&fit=crop&w=500&q=80" alt="Wildflowers"></td><td>€2.50</td></tr>
+    </table>
+    <hr>
+    <h2 id="bouquets">Flower Bouquets</h2>
+    <table>
+        <caption>Bouquet prices</caption>
+        <tr><td><b>Name</b></td><td><b>Description</b></td><td><b>Price</b></td></tr>
+        <tr><td>Tulip Bouquet</td><td>A colorful bouquet of fresh tulips.<img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=500&q=80" alt="Tulip bouquet"></td><td>€28.00</td></tr>
+        <tr><td>Rose Bouquet</td><td>A romantic arrangement of classic roses.<img src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?auto=format&fit=crop&w=500&q=80" alt="Rose bouquet"></td><td>€35.00</td></tr>
+        <tr><td>Mixed Flower Bouquet</td><td>Fresh flowers in many colors.<img src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?auto=format&fit=crop&w=500&q=80" alt="Mixed flower bouquet"></td><td>€32.00</td></tr>
+        <tr><td>White Bouquet</td><td>An elegant arrangement for celebrations.<img src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?auto=format&fit=crop&w=500&q=80" alt="White bouquet"></td><td>€40.00</td></tr>
+    </table>
+    <p><a href="index-ing.html">Back to home</a></p>
+    <p class="azalpena"><small>&copy; 2026 Lily Loredenda</small></p>
 </body>
 </html>
