@@ -1,6 +1,4 @@
-/* CSS sencillo para Lili Loredenda */
-
-/* Estilo general de la pagina */
+/* WebHorriaren azala */
 body {
     margin: 0;
     padding-bottom: 20px;
@@ -9,7 +7,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Menu de navegacion */
+/* Nabigazio menua */
 ul {
     margin: 0;
     padding: 15px;
@@ -33,7 +31,7 @@ ul a:hover {
     color: #d8a65d;
 }
 
-/* Titulos y textos */
+/* Textuk eta titulak */
 h1 {
     color: #294b3b;
     text-align: center;
@@ -62,7 +60,7 @@ p {
     color: #687568;
 }
 
-/* Enlaces */
+/* Links */
 a {
     color: #2f6847;
     font-weight: bold;
@@ -84,7 +82,7 @@ body > p a {
     margin-top: 5px;
 }
 
-/* Imagenes */
+/* Irudiak */
 img {
     display: block;
     width: 90%;
@@ -102,7 +100,7 @@ img.portada {
     border-bottom: 5px solid #d8a65d;
 }
 
-/* Tablas */
+/* Taulak */
 table {
     width: 90%;
     margin: 25px auto;
@@ -132,7 +130,7 @@ td img {
     max-width: 150px;
 }
 
-/* Tabla de productos destacados */
+/* Produktu taulak */
 table.destacados {
     border-spacing: 10px;
     border: 0;
@@ -175,7 +173,7 @@ table.destacados td a {
     text-decoration: none;
 }
 
-/* Formularios */
+/* Forms */
 form {
     max-width: 450px;
     margin: 25px auto;
@@ -222,7 +220,7 @@ hr {
     border-top: 1px solid #ded8ca;
 }
 
-/* Ajustes para pantallas pequeñas */
+/* Mugikorrak */
 @media (max-width: 700px) {
     li {
         display: inline-block;
