@@ -28,7 +28,8 @@ ul a {
 }
 
 ul a:hover {
-    color: #d8a65d;
+    color: black;
+    background-color: #d8a65d;
 }
 
 /* Textuk eta titulak */
